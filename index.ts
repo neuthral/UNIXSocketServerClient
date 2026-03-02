@@ -1,7 +1,7 @@
 import UnixServer from "./src/socketServer";
 import client from "./src/client";
 
-const socketPath = "/var/run/user/1000/mysocket";
+const socketPath = "/tmp/test.sock";
 
 UnixServer.listen(socketPath, () => {
   console.log("Unix server listening on", socketPath);
