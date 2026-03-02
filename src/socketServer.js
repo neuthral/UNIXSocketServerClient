@@ -25,6 +25,7 @@ var UnixServer = net.createServer((socket) => {
   socket.write("Hello from server");
 
   setInterval(() => {
+    socket.write(Date.now().toString() + " ");
     socket.write(wordFile[Math.floor(Math.random() * wordFile.length)]);
   }, 1000);
 });

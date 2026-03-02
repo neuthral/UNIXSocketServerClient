@@ -1,11 +1,6 @@
 # dependencies (bun install)
 node_modules
 
-# bun
-*.lock
-bun.lock
-bun.lock.bak
-
 # database
 *.sqlite
 *.sqlite3
