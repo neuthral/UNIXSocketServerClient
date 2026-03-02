@@ -13,7 +13,4 @@ eventArray.forEach((event) => {
   });
 });
 
-client.connect("/var/run/user/1000/mysocket", () => {
-  console.log("Connected to server");
-  client.write("Hello from client");
-});
+export default client;

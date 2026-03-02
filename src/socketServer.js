@@ -3,7 +3,7 @@ import fs from "bun:fs";
 
 var wordFile = fs.readFileSync("./foo.txt", "utf8").split("\n");
 // This server listens on a Unix socket at /var/run/mysocket
-var unixServer = net.createServer((socket) => {
+var UnixServer = net.createServer((socket) => {
   var eventArray = [
     "close",
     "connect",
@@ -29,6 +29,4 @@ var unixServer = net.createServer((socket) => {
   }, 1000);
 });
 
-unixServer.listen("/var/run/user/1000/mysocket", () => {
-  console.log("Unix server listening on /var/run/user/1000/mysocket");
-});
+export default UnixServer;

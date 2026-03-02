@@ -1,6 +1,14 @@
 # dependencies (bun install)
 node_modules
 
+# bun
+bun.lock
+bun.lock.bak
+
+# database
+*.sqlite
+*.sqlite3
+
 # output
 out
 dist
