@@ -4,7 +4,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "install": "touch /var/run/user/1000/mysocket",
     "start": "bun run index.ts"
   },
   "devDependencies": {

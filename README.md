@@ -1,7 +1,8 @@
 # Unix Socket server api [dont reinvent the wheel]
 
   example on how to use unix socket server api to send and receive data over a UNIX Domain socket,
-  this example iterates over a text file and sends random lines to the client, this client can be a worker or database or other server that is isolated from the wider network, 
+  this example iterates over a text file and sends random lines to the client, this client can be 
+  a worker or database or other server that is isolated from the wider network, 
   security is isolated only by user group or user id.
 
 ---
@@ -43,4 +44,4 @@ Connection Hello from client
 - [ ] Implement rate limiting to prevent abuse
 
 ---
-This project was created using `bun init` in bun v1.3.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+this project uses bun

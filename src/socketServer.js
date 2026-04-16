@@ -1,6 +1,7 @@
 import net from "bun:net";
 import fs from "bun:fs";
 
+// sends random words out to the socket client
 var wordFile = fs.readFileSync("./foo.txt", "utf8").split("\n");
 // This server listens on a Unix socket at /var/run/mysocket
 var UnixServer = net.createServer((socket) => {
